@@ -9,6 +9,6 @@ git clone https://github.com/HarnonA/socialNetwork.git
 cd weather
 
 <h3>Build</h3>
-npm i
-npm start
+<p>npm i</p>
+<p>npm start</p>
 
