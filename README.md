@@ -1,14 +1,14 @@
-#Weather App#
+<h1>Weather App</h1>
 
-##Getting started##
+<h2>Getting started</h2>
 
-###Download this repo###
+<h3>Download this repo</h3>
 git clone https://github.com/HarnonA/socialNetwork.git
 
-###Go to that file###
+<h3>Go to that file</h3>
 cd weather
 
-###Build###
+<h3>Build</h3>
 npm i
 npm start
 
