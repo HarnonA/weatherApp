@@ -1,0 +1,43 @@
+.WeatherCard{
+    display: flex; /* set a flex container */
+    flex-direction: column; /* main axis is vertical */
+    border-radius: 16px; /* rounding the edges */
+    scrollbar-width: none; /* hide scrollbar */
+    overflow: auto; /* hide what doesn't fit in height */
+    margin: 1rem; /* add some margin in all directions */
+    padding: 1rem; /* add some padding in all directions */
+    background-color: #3f5efb; /* background color */
+    height: 80%; /* height of component */
+    width: 60%; /* width of component */
+    justify-content: center; /* align in the main axis (column) */
+    align-items: center; /* align in the cross axis (row) */
+}
+
+.WeatherCard .city {
+    font-size: 1rem; /* size font */
+    color: black; /* color font */
+}
+
+.WeatherCard .temp {
+    display: flex; /* set a flex container */
+    flex-direction: row; /* main axis is horizontal */
+    text-align: center; /* text is aligned at the center */
+    justify-content: center; /* align in the main axis (row) */
+    align-items: center; /* align in the cross axis (column) */
+}
+.WeatherCard .temperature {
+    font-size: 2rem; /* size font */
+    height: 100%; /* height of component */
+    display: flex; /* set a flex container */
+    justify-content: center; /* align in the main axis (row) */
+    align-items: center; /* align in the cross axis (column) */
+
+}
+
+/* icon dimession */
+.WeatherCard img{
+    width: 50px; 
+    height: 50px;
+}
+
+

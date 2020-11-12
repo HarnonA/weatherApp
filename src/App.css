@@ -1,38 +1,35 @@
 .App {
-  text-align: center;
+    display: flex; /* set a flex container */
+    flex-direction: column; /* main axis is vertical */
+    height: 100vh; /* height of flex is 100% of 'screen' */
+    background: #3f5efb; /* set a background color */
+    /* set a gradient backgroud */
+    background: linear-gradient(180deg, #3f5efb 0%, #5372fb 75%);
+    text-align: center; /* aligns texts in center */
+    justify-content: center; /* align in the main axis (column) */
+    align-items: center;  /* align in the cross axis (row) */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .card {
+    display: flex; /* set a flex container */
+    flex-direction: column; /* main axis is vertical */
+    background: #fff; /* set a background color */
+    min-height: 16rem; /* height of component is 60% of parent height */
+    width: 60%; /* width of component is 60% of parent width */
+    border-radius: 16px; /* rounding the edges */
+    margin: 3rem; /* add maring in all sides*/
+    text-align: center; /* aligns texts in center */
+    justify-content: center; /* align in the main axis (column) */
+    align-items: center;  /* align in the cross axis (row) */
+    flex-wrap: wrap;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* when screen is smal, change width and height */
+@media (max-width: 520px) {
+    .App .card {
+        width: 90%;
+        height: 80%;
+    }    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
